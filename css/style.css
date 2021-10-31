@@ -1,0 +1,354 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: ;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*header
+---------------------*/
+header .mainvisual1{
+	height: 500px;
+	width: auto;
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+header .mainvisual1 .main_text-box{
+	height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: rgba(226, 104, 104, 0.3);
+}
+header .main_text-box p:nth-of-type(1){
+	font-size: 48px;
+	color: #fff;
+	font-weight: bold;
+}
+header .main_text-box p:nth-of-type(2){
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+}
+
+header .global_section{
+	border-bottom: 1px solid #efefef;
+}
+header .global_nav{
+	display: flex;
+	height: 80px;
+	width: 95%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+header .global_nav img{
+	padding: 15px;
+}
+header nav ul{
+	display: flex;
+}
+header nav ul li{
+	font-size: 21px;
+	margin: 10px 20px;
+	padding-top: 10px;
+}
+header nav ul li a{
+	color: #707070;
+}
+header nav ul li a:hover{
+	color: #bfbfbf;
+	border-bottom: 2px solid #bfbfbf;
+	padding-bottom: 30px;
+}
+
+/*About
+---------------------*/
+.about_section{
+	text-align: center;
+}
+.about_section h1{
+	margin: 120px 0 5px 0;
+    font-size: 30px;
+	font-weight: bold;
+}
+.about_section h2{
+	font-size: 15px;
+	margin-bottom: 64px;
+}
+.about_section p:nth-of-type(1){
+	margin-bottom: 40px;
+}
+.about_section p:nth-of-type(2),
+.about_section p:nth-of-type(3){
+	margin-bottom: 20px;
+}
+
+
+/*Course
+---------------------*/
+.course_section{
+	text-align: center;
+}
+.course_section h1{
+	margin: 64px 0 24px 0;
+    font-size: 30px;
+	font-weight: bold;
+}
+.course_section p{
+	margin-bottom: 64px;
+}
+
+.back_color1{
+	background-color: #fafafa;
+}
+.course_sub{
+	width: 960px;
+	margin: 0 auto;
+}
+.course_sub .sub_flex1,
+.course_sub .sub_flex2,
+.course_sub .sub_flex3{
+	display: flex;
+}
+.course_sub .sub_flex2{
+	flex-direction: row-reverse;
+}
+.course_sub img{
+	width: 480px;
+}
+.course_sub .course_main_textbox{
+	position: relative;
+	width: 100%;
+}
+.course_sub .course_sub_textbox{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	width: 85%;
+}
+.course_sub .course_sub_textbox h2{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+
+/*News
+---------------------*/
+.news_section{
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+.news_section h1{
+	margin: 64px 0 5px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.news_section h2{
+	font-size: 15px;
+    margin-bottom: 64px;
+}
+.news_section ul{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.news_section ul li{
+	width: 288px;
+	text-align: left;
+}
+.news_section ul li img{
+	width: 288px;
+}
+.news_section ul li p:nth-of-type(1){
+	margin: 15px 0 5px 0;
+    font-size: 14px;
+}
+.news_section a{
+	color: #fff;
+	background-color: #ffd61a;
+	width: 300px;
+	height: 60px;
+	margin: 0 auto 48px auto;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+/*Access
+---------------------*/
+.access_section{
+	text-align: center;
+	background-color: #fafafa;
+	padding-top: 64px;
+	padding-bottom: 80px;
+}
+.access_section h1{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+.access_section h2{
+	font-size: 15px;
+	margin-bottom: 64px;
+}
+.access_section .map{
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 40.25%;
+	position: relative;
+	margin-bottom: 64px;
+}
+.access_section .map iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.access_section ul{
+	width: 625px;
+	margin: 0 auto;
+}
+.access_section ul li{
+	display: flex;
+	margin-bottom: 24px;
+}
+.access_section ul li h1{
+	font-size: 16px;
+	margin: 0;
+}
+.access_section ul .ac_1 h1{
+	padding-right: 78px;
+}
+.access_section ul .ac_2 h1{
+	padding-right: 30px;
+}
+.access_section ul .ac_3 h1{
+	padding-right: 100px;
+}
+.access_section ul .ac_4 h1{
+	padding-right: 100px;
+}
+.access_section ul .ac_5 h1{
+	padding-right: 90px;
+}
+
+
+/*Contact
+---------------------*/
+.contact_section{
+	text-align: center;
+}
+.contact_section h1{
+	font-size: 30px;
+    font-weight: bold;
+    margin: 60px 0 5px 0;
+}
+.contact_section h2{
+	font-size: 15px;
+    margin-bottom: 64px;
+}
+.contact_section .contact_textbox p:first-of-type{
+	margin-bottom: 32px;
+}
+.contact_section .contact_textbox p:last-of-type{
+	margin-bottom: 80px;
+}
+.contact_section form{
+	width: 625px;
+	margin: 0 auto 120px auto;
+}
+.contact_section form dl{
+	display: flex;
+	justify-content: space-between;
+}
+.contact_section form dl:not(:last-of-type){
+	margin-bottom: 24px;
+}
+.contact_section form dl:last-of-type{
+	margin-bottom: 40px;
+}
+.contact_section form .contact_box{
+	border: solid 2px #bfbfbf;
+	border-radius: 5px;
+	width: 380px;
+	height: 30px;
+    padding: 5px;
+}
+.contact_section form ul li{
+	text-align: left;
+}
+.contact_section form textarea{
+	border: solid 2px #bfbfbf;
+	border-radius: 5px;
+	width: 380px;
+	height: 100px;
+	padding: 5px;
+}
+.contact_section form button{
+	width: 298px;
+	height: 54px;
+	color: #fff;
+	background-color: #ffd61a;
+	margin: 0 auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+/*Footer
+---------------------*/
+footer{
+	height: 100px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #707070;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider img {
+	width: 100%;
+  }
