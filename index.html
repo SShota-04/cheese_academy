@@ -14,61 +14,111 @@
     <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
     <meta name="format-detection" content="telephone=no">
     <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
 </head>
 
 <body>
-    <header>
-        <div class="mainvisual1">
-            <div class="main_text-box">
-                <p>セカイを変えるチーズを作ろう</p>
-                <p>チーズ職人養成学校「チーズアカデミーFUKUOKA」</p>
-            </div>
+    <div id="loading">
+        <div class="kvArea" id="loading_logo">
+          <div class="img_box">
+              <img src="img/mouse1.png" alt="" class="fadeUp">
+          </div>
         </div>
-        <div class="global_section">
-            <div class="global_nav">
-                <img src="img/header_logo.png" alt="ロゴ">
+        <div id="loading_text">
+            <span>C</span>
+            <span>h</span>
+            <span>e</span>
+            <span>e</span>
+            <span>s</span>
+            <span>e</span>
+            <span>&nbsp;</span>
+            <span>A</span>
+            <span>c</span>
+            <span>a</span>
+            <span>d</span>
+            <span>e</span>
+            <span>m</span>
+            <span>y</span>
+            <span>&nbsp;</span>
+            <span>L</span>
+            <span>o</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </div>
+    </div>
+    <div id="page_top"><a href="#"></a></div>
+    <header>
+        <div class="openbtn1"><span></span><span></span></div>
+            <div class="global_nav" id="global_n2">
                 <nav>
-                    <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#course">COURSE</a></li>
-                        <li><a href="#news">NEWS</a></li>
-                        <li><a href="#access">ACCESS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+                    <img src="img/header_logo.png" alt="ロゴ">
+                        <ul>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#course">COURSE</a></li>
+                            <li><a href="#news">NEWS</a></li>
+                            <li><a href="#access">ACCESS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
                 </nav>
+            </div>
+        <div class="global_section" id="global_n1"></div>
+        <div class="mainvisual1">
+            <img id="mouse_click1" src="img/mouse4.png" onclick="setBtnValue(0);">
+            <div class="main_text-box">
+                <p class="title">
+                    <span>セ</span>
+                    <span>カ</span>
+                    <span>イ</span>
+                    <span>を</span>
+                    <span>変</span>
+                    <span>え</span>
+                    <span>る</span>
+                    <span>チ</span>
+                    <span>ー</span>
+                    <span>ズ</span>
+                    <span>を</span>
+                    <span>作</span>
+                    <span>ろ</span>
+                    <span>う</span>
+                </p>
+                <p>チーズ職人養成学校「チーズアカデミーFUKUOKA」</p>
             </div>
         </div>
     </header>
 
     <main>
         <section id="about" class="about_section">
-            <h1>About</h1>
-            <h2>チーズアカデミーについて</h2>
-            <p>チーズアカデミーは，チーズ職人養成学校です．</p>
-            <p>チーズの素晴らしさを，自給自足を通じて，できるだけ多くの人に知っていただきたい．<br>
-                そして，食卓にはいつもチーズがあった，あの頃の当たり前をこの手で取り戻したい．</p>
-            <p>そんな思いから，チーズ職人養成学校「チーズアカデミーFUKUOKA」は歩みを始めています．</p>
-            <p>卒業後，チーズ自給自足のバックアップはもちろんのこと，<br>チーズ職人への就職・転職もサポートします</p>
+            <h1 class="fade_in">About</h1>
+            <h2 class="fade_in">チーズアカデミーについて</h2>
+            <div class="introduce_text1">
+                <p>チーズアカデミーは，チーズ職人養成学校です．</p>
+                <p>チーズの素晴らしさを，自給自足を通じて，できるだけ多くの人に知っていただきたい．<br>
+                    そして，食卓にはいつもチーズがあった，あの頃の当たり前をこの手で取り戻したい．</p>
+                <p>そんな思いから，チーズ職人養成学校「チーズアカデミーFUKUOKA」は歩みを始めています．</p>
+                <p>卒業後，チーズ自給自足のバックアップはもちろんのこと，<br>チーズ職人への就職・転職もサポートします</p>
+            </div>
         </section>
         <div class="slider">
-            <div><img src="img/about_01.jpg"></div>
+            <div><img id="mouse_click2" src="img/about_mouse_01.jpg" onclick="setBtnValue(1);"></div>
             <div><img src="img/about_02.jpg"></div>
             <div><img src="img/about_03.jpg"></div>
             <div><img src="img/about_04.jpg"></div>
         </div>
         <div class="back_color1">
             <section id="course" class="course_section">
-                <h1>Course</h1>
-                <p>未経験からでもスタートができるよう，カリキュラムは多くの専門家や<br>
-                    現役チーズ職人のアドバイスのもと，作られました．</p>
+                <h1 class="fade_in">Course</h1>
+                <div class="introduce_text1">
+                    <p>未経験からでもスタートができるよう，カリキュラムは多くの専門家や<br>
+                        現役チーズ職人のアドバイスのもと，作られました．</p>
+                </div>
             </section>
             <section class="course_sub">
                 <div class="sub_flex1">
@@ -84,7 +134,7 @@
                     <img src="img/course_02.jpg">
                     <div class="course_main_textbox">
                         <div class="course_sub_textbox">
-                            <h2>本格的な農園を使った実地研修</h2>
+                            <h2>本格的な農園を使った実地研修</h2><img id="mouse_click3" src="img/mouse2.png" onclick="setBtnValue(2);">
                             <p>チーズアカデミーでは，本格的な農園を使った実地研修を行うことができます．プロとして活躍するチーズ職人も使用するような，広大で環境も整った農園を余すところなく使い，卒業時には本格的なチーズを自分の力で作れる実践力の養成を目指します．</p>
                         </div>
                     </div>
@@ -101,8 +151,8 @@
             </section>
         </div>
         <section id="news" class="news_section">
-            <h1>News</h1>
-            <h2>ニュース</h2>
+            <h1 class="fade_in">News</h1>
+            <h2 class="fade_in">ニュース</h2>
             <ul>
                 <li>
                     <img src="img/news_img.jpg">
@@ -115,7 +165,7 @@
                     <p>チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！</p>
                 </li>
                 <li>
-                    <img src="img/news_img.jpg">
+                    <img id="mouse_click4" src="img/news_img_mouse.jpg" onclick="setBtnValue(3);">
                     <p>2018/11/24</p>
                     <p>チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が天神でオープンしました！</p>
                 </li>
@@ -123,8 +173,8 @@
             <a href="#">More</a>
         </section>
         <section id="access" class="access_section">
-            <h1>Access</h1>
-            <h2>会社情報</h2>
+            <h1 class="fade_in">Access</h1>
+            <h2 class="fade_in">会社情報</h2>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.5689447098543!2d131.39357936740188!3d34.09263089730443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449b0555555555%3A0x2a6332f3d29e5767!2zS0RESSDntq3mlrDjg5vjg7zjg6s!5e0!3m2!1sja!2sjp!4v1634354307362!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -152,8 +202,8 @@
             </ul>
         </section>
         <section id="contact" class="contact_section">
-            <h1>CONTACT</h1>
-            <h2>説明会お申し込み・お問い合わせ</h2>
+            <h1 class="fade_in">CONTACT</h1>
+            <h2 class="fade_in">説明会お申し込み・お問い合わせ</h2>
             <div class="contact_textbox">
                 <p>ぜひ1度，足を運んでみませんか．説明会は随時開催中．<br>
                     その他，お問い合わせもお気軽にどうぞ．お待ちしております．</p>
@@ -176,20 +226,40 @@
                     <dd><input type="email" name="mailaddress" id="mail" class="contact_box" size="60" value="" placeholder="sample@gmail.com"></dd>
                 </dl>
                 <dl>
-                    <dt>志望動機</dt>
+                    <dt><label>志望動機</label></dt>
                     <dd>
                         <ul>
-                        <li><input type="checkbox" name="check1" id="check1" value="1"><label for="check1">起業をしたい</label></li>
-                        <li><input type="checkbox" name="check2" id="check1" value="2"><label for="check2">チーズ系企業に就職・転職したい</label></li>
-                        <li><input type="checkbox" name="check3" id="check3" value="3"><label for="check3">チーズと関わる仕事をしており，仕事に生かしたい</label></li>
-                        <li><input type="checkbox" name="check4" id="check4" value="4"><label for="check4">チーズの教養を身につけたい</label></li>
+                        <li>
+                            <label for="check1">起業をしたい
+                                <input type="checkbox" name="check1" id="check1" value="1">
+                                <div class="indicator"></div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check2">チーズ系企業に就職・転職したい
+                                <input type="checkbox" name="check2" id="check2" value="2">
+                                <div class="indicator"></div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check3">チーズと関わる仕事をしており，仕事に生かしたい
+                                <input type="checkbox" name="check3" id="check3" value="3">
+                                <div class="indicator"></div>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="check4">チーズの教養を身につけたい
+                                <input type="checkbox" name="check4" id="check4" value="4">
+                                <div class="indicator"></div>
+                            </label>
+                        </li>
                         </ul>
                     </dd>
                 </dl>
                 <dl>
-                    <dt><label for="name">詳細</label></dt>
+                    <dt><label for="name">マウスを見つけた数</label></dt>
                     <dd>
-                        <textarea name="comment" id="comment" cols="500" rows="10"></textarea>
+                        <p class="mouse_area">あなたが見つけたマウスの数は<span id="mouse_count">0</span>です！</p>
                     </dd>
                 </dl>
                 <button type="submit">送信</button>
@@ -200,30 +270,161 @@
         <div>
             <small>&copy; 2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</small>
         </div>
-        <script>
-            $(function(){
-  $('.slider').slick({
-    autoplay: true, //自動でスクロール
-    autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
-    speed: 5000, //スライドが流れる速度を設定
-    cssEase: "linear", //スライドの流れ方を等速に設定
-    slidesToShow: 4, //表示するスライドの数
-    swipe: false, // 操作による切り替えはさせない
-    arrows: false, //矢印非表示
-    pauseOnFocus: false, //スライダーをフォーカスした時にスライドを停止させるか
-    pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
-    rtl: true, //スライダーを左から右に流す（逆向き）
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> 
+    <script>  
+    //スライドのアニメーション
+
+    $('.slider').slick({
+        autoplay:3000,
+        infinite:true,
+        dots:true,
+        arrows:false,
+        slidesToShow:2,
     responsive: [
       {
-        breakpoint: 750,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 3, //画面幅750px以下でスライド3枚表示
+          slidesToShow:1,
+          centerMode:true,
+          centerPadding:'100px'
         }
       }
-    ]
+      ]
+      });   
+
+    //ローディング画面
+        $(window).on('load',function(){
+        $("#loading").delay(2100).fadeOut('slow');
+        });
+
+    </script>
+    <script>
+        //タイトル文字のアニメーション
+
+        const CLASSNAME = "-visible";
+        //const TIMEOUT = 1500;
+        const $target = $(".title");
+
+        window.addEventListener('DOMContentLoaded', function(){
+            setTimeout(() => {
+        setInterval(() => {
+        $target.addClass(CLASSNAME);
+        /*setTimeout(() => {
+            $target.removeClass(CLASSNAME);
+        }, TIMEOUT);
+        }, TIMEOUT * 2);*/
+        });
+        },3000);
+                });
+    </script>
+    <script>
+        //下からふわっと表示される文字
+    
+        $(function(){
+    $(window).scroll(function (){
+        $('.fade_in').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+});
+
+        //マウスを見つけた数
+       /* $(document).ready(function(){
+            $('mouse_click1').on('click' , function(){
+                document.getElementById("mouse_count").innerHTML = "1匹";
+   });
+   $('mouse_click2').on('click' , function(){
+                document.getElementById("mouse_count").innerHTML = "1匹";
+   });
+   $('mouse_click3').on('click' , function(){
+                document.getElementById("mouse_count").innerHTML = "1匹";
+   });
+   $('mouse_click4').on('click' , function(){
+                document.getElementById("mouse_count").innerHTML = "1匹";
+   });
+
+}); */
+
+/*function count(){
+  var thisCount = $("#mouse_click1").html();
+      thisCount = Number(thisCount);
+      thisCount = thisCount +1;
+  $("#mouse_count").html(thisCount);
+}
+function count(){
+  var thisCount = $("#mouse_click2").html();
+      thisCount = Number(thisCount);
+      thisCount = thisCount +1;
+  $("#mouse_count").html(thisCount);
+}
+function count(){
+  var thisCount = $("#mouse_click3").html();
+      thisCount = Number(thisCount);
+      thisCount = thisCount +1;
+  $("#mouse_count").html(thisCount);
+}
+function count(){
+  var thisCount = $("#mouse_click4").html();
+      thisCount = Number(thisCount);
+      thisCount = thisCount +1;
+  $("#mouse_count").html(thisCount);
+}*/
+
+/*var btnArray =[0,1,2,3,4];
+        window.onload = function() {
+            for(var i = 0; i < btnArray.length; i++){
+                setBtnValue(i);
+            }
+        };
+        function setBtnValue(num) {
+            var btn = document.getElementById("#mouse_count" + num);
+            btn.value = btnArray[num][0] + btnArray[num][1]++;
+        }*/
+
+        var cnt = 0;
+        function setBtnValue(num){
+            cnt++;
+            document.getElementById("mouse_count").innerHTML = cnt;
+        }
+
+
+//ハンバーガーメニュー
+$(".openbtn1").click(function () {
+  $(this).toggleClass('active');
+    $("#global_n1,#global_n2").toggleClass('panelactive');
+});
+
+$("#global_n2 a").click(function () {
+    $(".openbtn1").removeClass('active');
+    $("#global_n1,#global_n2").removeClass('panelactive');
+});
+
+
+//トップに戻るボタン
+$(function(){
+  var pagetop = $('#page_top');
+  pagetop.hide();
+
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
   });
 });
-        </script>
-    </footer>
+
+    </script>
 </body>
 </html>

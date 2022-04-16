@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var btnArray =[
+        ["ボタン１…",0],
+        ["ボタン２…",0],
+        ["ボタン３…",0]
+        ];
+        window.onload = function() {
+            for(var i = 0; i < btnArray.length; i++){
+                setBtnValue(i);
+            }
+        };
+        function setBtnValue(num) {
+            var btn = document.getElementById("cde" + num);
+            btn.value = btnArray[num][0] + btnArray[num][1]++;
+        }
+        </script>
+</head>
+<body>
+    
+    <input type="button" id="cde0" onclick="setBtnValue(0);"><br>
+<input type="button" id="cde1" onclick="setBtnValue(1);"><br>
+<input type="button" id="cde2" onclick="setBtnValue(2);">
+
+</body>
+</html>
